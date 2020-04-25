@@ -1,8 +1,8 @@
 <!doctype html>
-<html>
+<html lang="es">
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="author" content="Tania Álvarez Díaz">
 
 		<title>Dibujo colaborativo con WebSockets</title>
@@ -32,7 +32,7 @@
 				<section class="center">
 					<h1>Dibujo colaborativo con WebSockets</h1>
 					<p>Tania Álvarez Díaz</p>
-					<p><a><href="mailto:uo244856@uniovi.es">UO244856@uniovi.es</a></p>
+					<p><a href="mailto:uo244856@uniovi.es">UO244856@uniovi.es</a></p>
 					<p><small>Difusión de contenidos multimedia vía web</small></p>
 				</section>
 				<section>
@@ -52,15 +52,16 @@
 				<section>
 					<h2>Introducción</h2>
 					<p>
-						El proyecto consiste en una aplicación de dibujo colaborativo con WebSockets.</br>
+						El proyecto consiste en una aplicación de dibujo colaborativo con WebSockets.<br/>
 						Esta aplicación consta de:
-						<ul>
-							<li><b>Servidor</b>: encargado de gestionar las conexiones de los distintos usuarios y los dibujos que estos van añadiendo al canvas.</li>
-							<li><b>Cliente</b>: permite a los usuarios conectarse al servidor, recibir los contenidos que hay dibujados hasta ese momento en el canvas y colaborar en el dibujo.</li>
-						</ul>
 					</p>
+					<ul>
+						<li><b>Servidor</b>: encargado de gestionar las conexiones de los distintos usuarios y los dibujos que estos van añadiendo al canvas.</li>
+						<li><b>Cliente</b>: permite a los usuarios conectarse al servidor, recibir los contenidos que hay dibujados hasta ese momento en el canvas y colaborar en el dibujo.</li>
+					</ul>
 				</section>
 				<section>
+					<h2 hidden>Desarrollo</h2>
 					<section class="smaller">
 						<h2>Desarrollo</h2>
 						<ul>
@@ -74,7 +75,7 @@
 						<ul>
 							<li><b>Server.js</b>: fichero donde se encuentra la implementación del servidor.</li>
 							<li><b>Función "incoming"</b>: se ejecuta cuando el servidor recibe un mensaje de un cliente.
-								En el caso de que llegue una figura, la guarda en la lista de figuras.</br>
+								En el caso de que llegue una figura, la guarda en la lista de figuras.
 							</li>
 						</ul>
 						<pre class="fragment">
@@ -152,7 +153,7 @@
 						<ul>
 							<li><b>Script.js</b>: fichero donde se encuentra la implementación del cliente (funciones para crear figuras y enviarlas al servidor, etc.).</li>
 							<li>
-								<b>Función "onMessageFromServer"</b>: se ejecuta cuando el cliente recibe un mensaje del servidor.</br>
+								<b>Función "onMessageFromServer"</b>: se ejecuta cuando el cliente recibe un mensaje del servidor.
 								<ul>
 									<li>Actualiza el número de usuarios y/o los objetos del canvas.</li>
 								</ul>
@@ -196,18 +197,17 @@
 				</section>
 				<section>
 					<h2>Despliegue</h2>
-					<p>El código de esta aplicación se puede encontrar en el <a href="https://github.com/TaniaAlvarezDiaz/DibujoColaborativoWebSockets">GitHub</a> de la autora.
-						<ul>
-							<li><a href="https://github.com/TaniaAlvarezDiaz/DibujoColaborativoWebSocketsServidor">Servidor.</a></li>
-							<li><a href="https://github.com/TaniaAlvarezDiaz/DibujoColaborativoWebSocketsCliente">Cliente.</a></li>
-							<li>
-								<a href="https://github.com/TaniaAlvarezDiaz/SlidesDibujoColaborativoWebSockets">Documentación.</a>
-								<ul>
-									<li><a href="https://taniaalvarezdiaz.github.io/SlidesDibujoColaborativoWebSockets">Presentación.</a></li>
-								</ul>
-							</li>
-						</ul>
-					</p>
+					<p>El código de esta aplicación se puede encontrar en el <a href="https://github.com/TaniaAlvarezDiaz/DibujoColaborativoWebSockets">GitHub</a> de la autora.</p>
+					<ul>
+						<li><a href="https://github.com/TaniaAlvarezDiaz/DibujoColaborativoWebSocketsServidor">Servidor.</a></li>
+						<li><a href="https://github.com/TaniaAlvarezDiaz/DibujoColaborativoWebSocketsCliente">Cliente.</a></li>
+						<li>
+							<a href="https://github.com/TaniaAlvarezDiaz/SlidesDibujoColaborativoWebSockets">Documentación.</a>
+							<ul>
+								<li><a href="https://taniaalvarezdiaz.github.io/SlidesDibujoColaborativoWebSockets">Presentación.</a></li>
+							</ul>
+						</li>
+					</ul>
 				</section>
 			</div>
 		</div>
